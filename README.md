@@ -265,6 +265,11 @@ These are the top 5 customers by average discount received.
 
 •	This shows that products from the N & S and P & A divisions are selling in much higher volumes compared to the PC division.
 
+•	If the Barchart is looked, the top product sold is 'AQ Pen Drive DRC' with a total quantity sold at 13,64,248 units, 
+followed by 'AQ Maxima MS' (total 8,39,336 units sold) and 'AQ Pen Drive 2 IN 1' (total 7,01,373 units sold).
+
+
+
 
 
 
