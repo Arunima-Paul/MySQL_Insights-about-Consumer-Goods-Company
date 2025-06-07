@@ -1,0 +1,176 @@
+1.
+SELECT distinct(market) FROM dim_customer
+where customer = "Atliq Exclusive"
+and region = "APAC";
+
+2.
+
+with CTE1 as(
+select count(distinct product_code) as unique_products_2020
+from fact_sales_monthly
+where fiscal_year = 2020),
+
+CTE2 as 
+(select count(distinct product_code) as unique_products_2021
+from fact_sales_monthly
+where fiscal_year = 2021)
+
+select
+CTE1.unique_products_2020,
+CTE2.unique_products_2021 ,
+round((unique_products_2021 - unique_products_2020)*100 / unique_products_2020, 2) as pct_chg
+from CTE1
+cross join CTE2;
+
+
+3.
+
+SELECT segment, count(distinct product_code) as pdt_cnt
+FROM dim_product
+group by segment
+order by pdt_cnt desc;
+
+
+4.
+
+with CTE1 as(
+select p.segment, count(distinct f.product_code) as product_count_2020
+from fact_sales_monthly f
+join dim_product p
+on f.product_code = p.product_code
+where fiscal_year = 2020
+group by p.segment
+order by product_count_2020 desc),
+
+CTE2 as 
+(select p.segment, count(distinct f.product_code) as product_count_2021
+from fact_sales_monthly f
+join dim_product p
+on f.product_code = p.product_code
+where fiscal_year = 2021
+group by p.segment
+order by product_count_2021 desc)
+
+select
+    coalesce(c.segment, d.segment) AS segment,
+    coalesce(c.product_count_2020, 0) AS product_count_2020,
+    coalesce(d.product_count_2021, 0) AS product_count_2021,
+    coalesce(d.product_count_2021, 0) - COALESCE(c.product_count_2020, 0) AS difference
+from CTE1 c
+left join CTE2 d on c.segment = d.segment
+
+union
+
+select
+    coalesce(c.segment, d.segment) AS segment,
+    coalesce(c.product_count_2020, 0) AS product_count_2020,
+    coalesce(d.product_count_2021, 0) AS product_count_2021,
+    coalesce(d.product_count_2021, 0) - COALESCE(c.product_count_2020, 0) AS difference
+from CTE2 d
+left joinLEFT JOIN CTE1 c on c.segment = d.segment
+where c.segment is null
+
+order by difference desc;
+
+5.
+
+SELECT 
+    fmc.product_code,
+    dp.product,
+    fmc.manufacturing_cost
+FROM fact_manufacturing_cost fmc
+JOIN dim_product dp ON fmc.product_code = dp.product_code
+WHERE fmc.manufacturing_cost = (
+        SELECT MAX(manufacturing_cost) FROM fact_manufacturing_cost
+    )
+   or fmc.manufacturing_cost = (
+        SELECT MIN(manufacturing_cost) FROM fact_manufacturing_cost
+    );
+
+
+6.
+
+SELECT c.customer_code, c.customer, round(avg(p.pre_invoice_discount_pct),2) as avg_dsct_pct
+FROM dim_customer c
+join fact_pre_invoice_deductions p
+on c.customer_code = p.customer_code
+where c.market = "India"
+and fiscal_year = 2021
+group by c.customer_code, c.customer
+order by avg_dsct_pct desc
+limit 5;
+
+
+7.
+select c.customer, month(s.date)as month, year(s.date) as year, 
+round((sum(s.sold_quantity * g.gross_price)/1000000),2) as gross_sales_amount_mln
+from dim_customer c
+join fact_sales_monthly s
+on c.customer_code = s.customer_code
+	join fact_gross_price g
+    on g.product_code = s.product_code
+where c.customer = "Atliq Exclusive" 
+group by month, year
+order by month, year;
+
+
+8.
+
+with CTE3 as (
+select month(date) as month,
+	case
+	when month(date) in (9,10,11) then "Q1"
+	when month(date) in (12,1,2) then "Q2"
+	when month(date) in (3,4,5) then "Q3"
+	when month(date) in (6,7,8) then "Q4"
+	end as qtr,
+sold_quantity
+ from fact_sales_monthly
+ where fiscal_year = 2020
+ )
+SELECT qtr,  
+sum(sold_quantity) as total_sold_quantity
+from CTE3
+group by qtr
+order by total_sold_quantity desc ;
+
+
+9.
+
+WITH CTE4 AS (
+select c.channel, 
+round(sum((s.sold_quantity * g.gross_price)/ 1000000),2 ) as gross_sales_mln
+from dim_customer c
+join fact_sales_monthly s
+on c.customer_code = s.customer_code
+     join fact_gross_price g
+     on g.product_code = s.product_code
+where s.fiscal_year = 2021
+group by c.channel
+order by c.channel desc)
+
+select *,
+round(gross_sales_mln * 100/ sum(gross_sales_mln) over (), 2 ) as pct
+from CTE4;
+
+
+10.
+
+with CTE5 as (
+select p.division, p.product_code, p.product, 
+sum(s.sold_quantity) as total_sold_quantity
+from fact_sales_monthly s
+     join dim_product p
+     on p.product_code = s.product_code
+where s.fiscal_year = 2021
+group by p.division, p.product_code, p.product),
+
+CTE6 as (
+select *,
+dense_rank() over (partition by division order by total_sold_quantity desc) as drnk
+from CTE5)
+
+select * from CTE6
+where drnk <= 3;
+
+
