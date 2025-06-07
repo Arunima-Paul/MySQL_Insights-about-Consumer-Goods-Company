@@ -30,7 +30,7 @@ Direct sales refer to sales made directly to consumers through a company's websi
 
 Distributors refer to intermediaries or middlemen between the manufacturer and retailer or end consumers.
 
-**(V) market:** The 'market' column lists the countries in which the customer is located.
+**(v) market:** The 'market' column lists the countries in which the customer is located.
 
 **(vi) region:** The 'region' column categorizes countries according to their geographic location, including "APAC" (Asia Pacific), "EU" (Europe), "NA" (North America), and  "LATAM" (Latin America).
 
