@@ -96,7 +96,7 @@ For AtliQ Hardware the fiscal year starts in September. The data available in th
 
 **(v) fiscal_year:** The "fiscal_year" column holds the fiscal period when the sale of a product occurred.
 
-**Let's see the Ad-hoc requests and gather insights about the product, sales and customer data to help AtliQ Hardwares make data-informed decisions.****
+**Let's see the Ad-hoc requests and gather insights about the product, sales and customer data to help AtliQ Hardwares make data-informed decisions.**
 
 **1.Provide the list ofmarkets in which customer "Atliq Exclusive" operatesits business in the APAC region.**
 
@@ -122,8 +122,6 @@ For AtliQ Hardware the fiscal year starts in September. The data available in th
 
 **Insight-** **Product Expansion**
 • The number of unique products increased from 245 in 2020 to 334 in 2021 showing a 36.33% growth in product variety YoY.
-
-•The Notebook and Accessories segments lead the product count with 129 and 116 unique items respectively.
 
 ****3. Provide a report with all the unique product counts for each segment and sort them in descending order of product counts.**
 
