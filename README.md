@@ -1,5 +1,5 @@
 # MySQL_Insights-about-Consumer-Goods-Company
-This is a summary report with key insights and recommendations given for the Executive Management at a Consumer Goods Company.
+This is a report with key insights and recommendations given for the Executive Management at a Consumer Goods Company.
 
 First, we’ll look into the problem statement, then we’ll understand the database give for analysis, then we’ll move through the ad-hoc requests and analyse the insights gathered from them and lastly we’ll finish with strategic recommendations.
 
