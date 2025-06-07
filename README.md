@@ -15,7 +15,7 @@ My Task is to analyse their ‘ad-hoc-requests.pdf’ where there are 10 ad hoc 
 
 Let's understand the dataset give for analysis.
 
---------**The dataset includes information for **six main tables** detailed as below :**
+--------**The dataset includes information for **six main tables** detailed as below :**----------
 
 **1. dim_customer** - this table contains customer-related data. 
 
@@ -98,7 +98,7 @@ For AtliQ Hardware the fiscal year starts in September. The data available in th
 
 **(v) fiscal_year:** The "fiscal_year" column holds the fiscal period when the sale of a product occurred.
 
---------**Let's see the Ad-hoc requests and gather insights about the product, sales and customer data to help AtliQ Hardwares make data-informed decisions.**
+--------**Let's see the Ad-hoc requests and gather insights about the product, sales and customer data to help AtliQ Hardwares make data-informed decisions.**----------
 
 **1.Provide the list of markets in which customer "Atliq Exclusive" operatesits business in the APAC region.**
 
@@ -304,16 +304,6 @@ followed by 'AQ Maxima MS' (total 8,39,336 units sold) and 'AQ Pen Drive 2 IN 1'
 they need to expand their lower performing channels and product lines to increase sales along with seasonal demand patterns.
 
 
--------------End of Analysis-------------------
+-------------**End of Analysis**-------------------
 
 Dataset obtained from Codebasics Resume Project Challenge #4.
-
-
-
-
-
-
-
-
-
-
