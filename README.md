@@ -98,7 +98,7 @@ For AtliQ Hardware the fiscal year starts in September. The data available in th
 
 **Let's see the Ad-hoc requests and gather insights about the product, sales and customer data to help AtliQ Hardwares make data-informed decisions.**
 
-**1.Provide the list ofmarkets in which customer "Atliq Exclusive" operatesits business in the APAC region.**
+**1.Provide the list of markets in which customer "Atliq Exclusive" operatesits business in the APAC region.**
 
 ![q1(3)_Ans](https://github.com/user-attachments/assets/79f80b05-12b0-411e-aaab-b21e1b92819a)
 
@@ -108,22 +108,19 @@ For AtliQ Hardware the fiscal year starts in September. The data available in th
 
 •	This shows wide geographical coverage in South and Southeast Asia.
 
-**2. What is the percentage of unique product increase in2021 vs. 2020?**
+**2. What is the percentage of unique product increase in 2021 vs. 2020?**
    
 **The final output contains these fields,**
 
-**unique_products_2020**
-
-**unique_products_2021**
-
-**percentage_chg**
+**unique_products_2020**, **unique_products_2021** , **percentage_chg**
 
 ![q2 (3)_Ans](https://github.com/user-attachments/assets/46de4384-1b87-4efd-9e64-2968dd39e52d)
 
 **Insight-** **Product Expansion**
+
 • The number of unique products increased from 245 in 2020 to 334 in 2021 showing a 36.33% growth in product variety YoY.
 
-****3. Provide a report with all the unique product counts for each segment and sort them in descending order of product counts.**
+**3. Provide a report with all the unique product counts for each segment and sort them in descending order of product counts.**
 
 **The final output contains 2 fields,**
 
@@ -132,6 +129,7 @@ For AtliQ Hardware the fiscal year starts in September. The data available in th
 ![q3 (3)](https://github.com/user-attachments/assets/001c0ba7-0fbd-4d68-950c-e636a8c4f408)
 
 **Insight-** **Segment Growth**
+
 • The 'Notebook' segment has the highest number of unique products at 129, followed by 'Accessories' with 116 and 'Peripherals' with 84. 
 
 • Segments like 'Desktop', 'Storage' and 'Networking' have significantly fewer products, with no. of 32, 27 and 9 respectively.
@@ -140,25 +138,49 @@ For AtliQ Hardware the fiscal year starts in September. The data available in th
 
 **The final output contains these fields,**
 
-**segment**
-
-**product_count_2020**
-
-**product_count_2021**
-
-**difference**
+**segment**, **product_count_2020**, **product_count_2021**, **difference**
 
 ![q4 (2)_ans](https://github.com/user-attachments/assets/ac1957d4-3e66-4348-a40f-b5940fd3b8c9)
 
-**Insight** 
+**Insight** **Segment Growth**
 
 •	In 2021 Accessories segment added the most new products with an increase of 34 compared to 2020. 
 
-Notebook and Peripherals segments both added 16 new products. This shows that Accessories and Desktop had the strongest growth in product variety.
+•	Notebook and Peripherals segments both added 16 new products.
 
 •	Desktop products tripled from 7 to 22 indicating increase in demand.
 
+**5. Get the products that have the highest and lowest manufacturing costs.**
 
+**The final output should contain these fields,**
+
+****product_code**, **product**, **manufacturing_cost****
+
+![q5_ans](https://github.com/user-attachments/assets/21bfca1e-dae6-427d-9fae-db07a80e6c5a)
+
+**Insight**  **Manufacturing Cost Variation**
+
+•	The product with the highest manufacturing cost is 'AQ HOME Allin1 Gen 2' at 240.54. 
+
+•	The product with the lowest manufacturing cost is 'AQ Master wired x1 Ms' at just 0.89. 
+
+•	This shows a large difference in production cost between the two products.
+
+**6. Generate a report which contains the top 5 customers who received an average high pre_invoice_discount_pct for the fiscal year 2021 and in the Indian market.**
+
+**The final output contains these fields,**
+
+**customer_code, customer, average_discount_percentage**
+
+![q6 (2)_Ans](https://github.com/user-attachments/assets/92ab6f61-13c9-40ec-bdc7-ceb701053c81)
+
+These are the top 5 customers by average discount received.
+
+In the Indian market for fiscal year 2021, Flipkart received the highest average pre-invoice discount of 0.31. 
+
+Viveks, Croma and Ezone followed closely with an average discount of 0.30. 
+
+Amazon had a slightly lower average discount of 0.29. 
 
 
 
