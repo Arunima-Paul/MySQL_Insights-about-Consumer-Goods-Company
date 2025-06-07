@@ -4,7 +4,7 @@ This is a summary report with key insights and recommendations given for the Exe
 First, we’ll look into the problem statement, then we’ll understand the database give for analysis, then we’ll move through the ad-hoc requests and analyse the insights gathered from them and lastly we’ll finish with strategic recommendations.
 
 
-**Problem Statement :** AtliQ Hardwares (which is an imaginary company) is one of the leading computer hardware producers in India and they are well expanded in other countries too.
+///**Problem Statement :** AtliQ Hardwares (which is an imaginary company) is one of the leading computer hardware producers in India and they are well expanded in other countries too.
 However, the management noticed that they do not get enough insights to make quick and smart data-informed decisions. They want to expand their data analytics team and want to hire someone who is good at both tech and soft skills.
 
 Hence, they decided to conduct a SQL challenge which will help them to understand both the skills.
@@ -13,7 +13,7 @@ My Task is to analyse their ‘ad-hoc-requests.pdf’ where there are 10 ad hoc 
 
 Let's understand the dataset give for analysis.
 
-The dataset includes information for **six main tables** detailed as below :
+///**The dataset includes information for **six main tables** detailed as below :**
 
 **1. dim_customer** - this table contains customer-related data. 
 
@@ -96,7 +96,7 @@ For AtliQ Hardware the fiscal year starts in September. The data available in th
 
 **(v) fiscal_year:** The "fiscal_year" column holds the fiscal period when the sale of a product occurred.
 
-**Let's see the Ad-hoc requests and gather insights about the product, sales and customer data to help AtliQ Hardwares make data-informed decisions.**
+/// **Let's see the Ad-hoc requests and gather insights about the product, sales and customer data to help AtliQ Hardwares make data-informed decisions.**
 
 **1.Provide the list of markets in which customer "Atliq Exclusive" operatesits business in the APAC region.**
 
@@ -261,7 +261,7 @@ These are the top 5 customers by average discount received.
 
 •	Other high-performing products are 'AQ Pen Drive DRC' and 'AQ Gamers Ms' with over 400,000 units sold. 
 
-•	In the PC division, 'AQ Digit' and 'AQ Velocity' had much lower sales, with under 18,000 units each. 
+•	In the PC division, 'AQ Digit' and 'AQ Velocity' had much lower sales with under 18,000 units each. 
 
 •	This shows that products from the N & S and P & A divisions are selling in much higher volumes compared to the PC division.
 
