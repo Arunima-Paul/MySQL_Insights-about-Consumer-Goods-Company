@@ -4,7 +4,9 @@ This is a summary report with key insights and recommendations given for the Exe
 First, we’ll look into the problem statement, then we’ll understand the database give for analysis, then we’ll move through the ad-hoc requests and analyse the insights gathered from them and lastly we’ll finish with strategic recommendations.
 
 
-///**Problem Statement :** AtliQ Hardwares (which is an imaginary company) is one of the leading computer hardware producers in India and they are well expanded in other countries too.
+------**Problem Statement :**------- 
+
+AtliQ Hardwares (which is an imaginary company) is one of the leading computer hardware producers in India and they are well expanded in other countries too.
 However, the management noticed that they do not get enough insights to make quick and smart data-informed decisions. They want to expand their data analytics team and want to hire someone who is good at both tech and soft skills.
 
 Hence, they decided to conduct a SQL challenge which will help them to understand both the skills.
@@ -13,7 +15,7 @@ My Task is to analyse their ‘ad-hoc-requests.pdf’ where there are 10 ad hoc 
 
 Let's understand the dataset give for analysis.
 
-///**The dataset includes information for **six main tables** detailed as below :**
+--------**The dataset includes information for **six main tables** detailed as below :**
 
 **1. dim_customer** - this table contains customer-related data. 
 
@@ -96,7 +98,7 @@ For AtliQ Hardware the fiscal year starts in September. The data available in th
 
 **(v) fiscal_year:** The "fiscal_year" column holds the fiscal period when the sale of a product occurred.
 
-/// **Let's see the Ad-hoc requests and gather insights about the product, sales and customer data to help AtliQ Hardwares make data-informed decisions.**
+--------**Let's see the Ad-hoc requests and gather insights about the product, sales and customer data to help AtliQ Hardwares make data-informed decisions.**
 
 **1.Provide the list of markets in which customer "Atliq Exclusive" operatesits business in the APAC region.**
 
@@ -242,7 +244,7 @@ These are the top 5 customers by average discount received.
 
 •	The Direct channel made 406.69 M (15.48%) and the Distributor channel had the lowest sales at 297.18 M (11.31%). 
 
-•	This shows that most of the sales came through the Retail Channel.
+•	This shows that most of the sales came through the Retailer Channel.
 
 
 **10. Get the Top 3 products in each division that have a high total_sold_quantity in the fiscal_year 2021?**
@@ -267,6 +269,47 @@ These are the top 5 customers by average discount received.
 
 •	If the Barchart is looked, the top product sold is 'AQ Pen Drive DRC' with a total quantity sold at 13,64,248 units, 
 followed by 'AQ Maxima MS' (total 8,39,336 units sold) and 'AQ Pen Drive 2 IN 1' (total 7,01,373 units sold).
+
+-------**Recommendations:-**-------
+
+**(i) Product strategy-** 
+
+•	Expand highgrowth segments like Accessories, Notebook by the way of Marketing.
+
+•	Review the performance of low-selling PC products for possible repositioning or discontinuation.
+
+**(ii) Sales optmisation strategy-**
+
+• Explore ways to boost Q3 sales such as midyear promotions or new product launches to increase sales.
+
+**(iii) Channel strategy-**
+
+• Evaluate the Direct and Distributor channels to explore growth opportunities.
+
+**(iv) Cost management-**
+
+• Analyse the high cost products for savings or premium pricing.
+
+**(v) Customer focus strategy-**
+
+• Evaluate the discounting strategies for large customers like Flipkart and Croma.
+
+• Explore offering loyalty programme incentives for middle tier customers to increase revenue.
+
+-------**Conclusion**----------
+
+• From this analys we can find that AtliQ Hardwares is making good and effecitive progress in expanding their product base using their retailer channels.
+
+• However, they need to utilise the key opportunities to improve their profitability, 
+they need to expand their lower performing channels and product lines to increase sales along with seasonal demand patterns.
+
+
+-------------End of Analysis-------------------
+
+Dataset obtained from Codebasics Resume Project Challenge #4.
+
+
+
 
 
 
