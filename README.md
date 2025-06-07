@@ -96,10 +96,69 @@ For AtliQ Hardware the fiscal year starts in September. The data available in th
 
 **(v) fiscal_year:** The "fiscal_year" column holds the fiscal period when the sale of a product occurred.
 
+**Let's see the Ad-hoc requests and gather insights about the product, sales and customer data to help AtliQ Hardwares make data-informed decisions.****
 
+**1.Provide the list ofmarkets in which customer "Atliq Exclusive" operatesits business in the APAC region.**
 
+![q1(3)_Ans](https://github.com/user-attachments/assets/79f80b05-12b0-411e-aaab-b21e1b92819a)
 
+**Insight-**  **Market Presence** 
 
+•	Atliq Exclusive operates in eight markets within the APAC region- India, Indonesia, Japan, Philippines, South Korea, Australia, New Zealand and Bangladesh.
+
+•	This shows wide geographical coverage in South and Southeast Asia.
+
+**2. What is the percentage of unique product increase in2021 vs. 2020?**
+   
+**The final output contains these fields,**
+
+**unique_products_2020**
+
+**unique_products_2021**
+
+**percentage_chg**
+
+![q2 (3)_Ans](https://github.com/user-attachments/assets/46de4384-1b87-4efd-9e64-2968dd39e52d)
+
+**Insight-** **Product Expansion**
+• The number of unique products increased from 245 in 2020 to 334 in 2021 showing a 36.33% growth in product variety YoY.
+
+•The Notebook and Accessories segments lead the product count with 129 and 116 unique items respectively.
+
+****3. Provide a report with all the unique product counts for each segment and sort them in descending order of product counts.**
+
+**The final output contains 2 fields,**
+
+**segment , product_count**
+
+![q3 (3)](https://github.com/user-attachments/assets/001c0ba7-0fbd-4d68-950c-e636a8c4f408)
+
+**Insight-** **Segment Growth**
+• The 'Notebook' segment has the highest number of unique products at 129, followed by 'Accessories' with 116 and 'Peripherals' with 84. 
+
+• Segments like 'Desktop', 'Storage' and 'Networking' have significantly fewer products, with no. of 32, 27 and 9 respectively.
+
+**4. Follow-up: Which segment had the most increase in unique products in 2021 vs 2020?**
+
+**The final output contains these fields,**
+
+**segment**
+
+**product_count_2020**
+
+**product_count_2021**
+
+**difference**
+
+![q4 (2)_ans](https://github.com/user-attachments/assets/ac1957d4-3e66-4348-a40f-b5940fd3b8c9)
+
+**Insight** 
+
+•	In 2021 Accessories segment added the most new products with an increase of 34 compared to 2020. 
+
+Notebook and Peripherals segments both added 16 new products. This shows that Accessories and Desktop had the strongest growth in product variety.
+
+•	Desktop products tripled from 7 to 22 indicating increase in demand.
 
 
 
